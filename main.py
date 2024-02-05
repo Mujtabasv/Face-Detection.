@@ -22,7 +22,6 @@ if user_img is not None:
 
 if user_img:   
     img_arr=cv2.imread("Image.jpg")
-    
     gray_img = cv2.cvtColor(img_arr, cv2.COLOR_RGB2GRAY)
     faces = model.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=8)
     for (x, y, w, h) in faces:
