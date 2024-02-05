@@ -10,7 +10,7 @@ from PIL import Image
 st.title('Face Detection Model.')
 st.header('Detect face in uploaded image file.')
 
-model = cv2.CascadeClassifier("C:/Users/mujta/Downloads/haarcascade_frontalface_default.xml")
+model = cv2.CascadeClassifier("/home/mujta/Downloads/haarcascade_frontalface_default.xml")
 
 user_img = st.file_uploader('Upload an Image!',type=['jpg','png','jpeg'])
 
